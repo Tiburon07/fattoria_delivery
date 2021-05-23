@@ -1,12 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AlbumsController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\PhotosController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\admin\AdminUserController;
-use App\Http\Controllers\AttivitaController;
+use App\Http\Controllers\PizzaController;
 use App\Events\Message;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -37,5 +35,13 @@ Route::group(
     function (){
         Route::get('/', [AdminUserController::class,'index'])->name('user-list');
         Route::get('/getUsers/{start}/{length}/{col}/{dir}/{search}', [AdminUserController::class, 'getUsers']);
+    }
+);
+
+//PIZZE
+Route::group(
+    ['middleware' => ['auth','verifyIsAdmin'],'prefix' => 'pizza'],
+    function (){
+        Route::get('/', [PizzaController::class,'index'])->name('pizza-list');
     }
 );

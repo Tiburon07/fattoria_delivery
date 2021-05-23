@@ -27,7 +27,7 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            <div><div><a target='_blank' href='https://docplayer.it/12430176-Basi-di-dati-a-a-2012-2013-progetto-database-per-pizzeria-da-asporto.html'>Basi di Dati A.A. 2012/2013 Progetto database per pizzeria da asporto</a></div><div><iframe frameborder="0" style="border-bottom: 2px solid #eee; border-top: 0px;" scrolling="no" src="http://docplayer.it/docview/27/12430176/#page=15" width="100%" height="1024px" allowfullscreen></iframe></div></div>
+        </div>
     </section>
 </div>
 @endsection
